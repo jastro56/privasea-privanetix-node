@@ -1,0 +1,6 @@
+source <(wget -O - https://raw.githubusercontent.com/zunxbt/installation/main/docker.sh)
+
+sudo groupadd docker && sudo usermod -aG docker $(whoami) && newgrp docker
+docker pull privasea/acceleration-node-beta:latest
+mkdir -p ~/privasea/config && cd ~/privasea
+
